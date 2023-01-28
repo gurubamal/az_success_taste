@@ -1,0 +1,12 @@
+on: [push]
+jobs:
+  build:
+    runs-on: node6
+    steps: 
+    - uses: actions/checkout@v1
+    - name: Run a one line script
+      run: echo "hello be!"
+    - name: Run a multiline line script
+      run:
+        echo "hello be2!"
+        echo "hello be3!"
